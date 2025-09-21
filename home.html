@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Início | Radson - Diagnóstico por Imagem - Santa Cruz do Sul, RS</title>
+</head>
+
+<body>
+    <nav>
+    <div class="nav-logo">
+        <img src="https://www.radson.com.br/assets/static/svg/logo.svg" alt="Botão" onclick="location.href='home.html'" class="logo">
+    </div>
+    
+    <div class="nav-menu">
+        <div class="links">
+            <a href="#">SOBRE</a>
+            <a href="#">EXAMES</a>
+            <a href="#">EQUIPE MÉDICA</a>
+            <a href="#">CONVÊNIOS</a>
+            <a href="#">BLOG</a>
+            <a href="#">CONTATO</a>
+        </div>
+        <div class="nav-btn">
+            <a class="resultadoex" href="https://rds.otimusclinic.com/radson/servlet/app.resultadodeexame?sdTjZIxAkYVpFL5AwTTQ8aUtVYs+hKhFyP16JMhyWus=" target="_blank">Resultado de exames</a>
+            <a class="acessome" href="https://rds.otimusclinic.com/radson/servlet/app.entrar" target="_blank">Acesso médico</a>
+        </div>
+    </div>
+    
+    <div class="hamburguer" onclick="toggleMenu()">☰</div>
+</nav>
+    <!-- Nav-bar Celular-->
+    <div class="menu-celular" id="menuCelular">
+        <a href="#">SOBRE</a>
+        <a href="#">EXAMES</a>
+        <a href="#">EQUIPE MÉDICA</a>
+        <a href="#">CONVÊNIOS</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTATO</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menuCelular").classList.toggle("ativo");
+        }
+    </script>
+</body>
+
+</html>

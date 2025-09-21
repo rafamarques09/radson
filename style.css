@@ -1,0 +1,145 @@
+/* NAVBAR padrão (PC) */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR padrão (PC) */
+nav {
+    background: #E1E1E1;
+    padding: 20px 50px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza todos os itens na horizontal */
+    position: relative;
+    z-index: 1001;
+    border: none;
+    margin: 0;
+}
+
+/* Contêiner do menu */
+.nav-menu {
+    display: flex; /* Mantém links e botões na mesma linha */
+    align-items: center; /* Alinha os links e os botões verticalmente */
+    gap: 180px; /* Adiciona espaço entre links e botões */
+    margin-top: 20px; /* Adiciona um espaço para separar do logo */
+}
+
+.links {
+    display: flex;
+    align-items: center; /* Garante que os links fiquem alinhados */
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center; /* Garante que os botões fiquem alinhados */
+    gap: 15px;
+}
+
+.logo {
+  display:flex;
+  position: relative;
+  height: 80px; 
+  margin-bottom: 10px;
+  margin-right: 900px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.nav-btn .acessome, .resultadoex {
+  background-color: #D5303A;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.nav-btn .acessome:hover, .resultadoex:hover {
+  background-color: #a02729;
+}
+
+.links a {
+  position: relative;
+  white-space: nowrap;
+  color: rgb(138, 138, 138);
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+  
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #D5303A;
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: #D5303A;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
+/* Ícone hamburguer (celular) */
+.hamburguer {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+
+    /* Menu fullscreen (celular) */
+    .menu-celular {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: #D5303A;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      gap: 30px;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1000;
+    }
+
+    .menu-celular a {
+      color: white;
+      font-size: 22px;
+      text-decoration: none;
+    
+    }
+
+    /* Quando ativo */
+    .menu-celular.ativo {
+      transform: translateY(0);
+    }
+
+    /* --- RESPONSIVIDADE --- */
+    @media (max-width: 768px) {
+      .links {
+        display: none; /* Esconde os links no celular */
+      }
+      
+      .hamburguer {
+        display: block; /* Mostra o ícone */
+      }
+    }
