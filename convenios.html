@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Fale conosco | Radson - Diagnóstico por Imagem - Santa Cruz do Sul, RS</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="https://www.radson.com.br/assets/static/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="css/convenios.css">
+    <title>Nossos conveniados | Radson - Diagnóstico por Imagem - Santa Cruz do Sul, RS</title>
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.radson.com.br/assets/static/favicons/favicon-16x16.png">
 
 <body>
     <nav>
@@ -25,16 +27,18 @@
                 <a href="contato.html">CONTATO</a>
             </div>
             <div class="grid-container">
-                <a href="https://agenda.otimusclinic.com/rds/client/agendamento" target="_blank" class="download-btn-combinado">
+                <a href="https://agenda.otimusclinic.com/rds/client/agendamento" target="_blank"
+                    class="download-btn-combinado">
                     <div class="icon-section">
-                        <img src="imagens/calendario.png" alt="Calendário" >
+                        <img src="imagens/calendario.png" alt="Calendário">
                     </div>
                     <div class="text-section">
                         Agendamento online
                     </div>
                 </a>
 
-                <a href="https://api.whatsapp.com/send/?phone=5551996492360&text&type=phone_number&app_absent=0" target="_blank" class="download-btn-combinado">
+                <a href="https://api.whatsapp.com/send/?phone=5551996492360&text&type=phone_number&app_absent=0"
+                    target="_blank" class="download-btn-combinado">
                     <div class="icon-section">
                         <img src="imagens/whatsapp-logo-png.png" alt="Resultados">
                     </div>
@@ -43,7 +47,8 @@
                     </div>
                 </a>
 
-                <a href="https://rds.otimusclinic.com/radson/servlet/app.resultadodeexame?sdTjZIxAkYVpFL5AwTTQ8aUtVYs+hKhFyP16JMhyWus=" target="_blank" class="download-btn-combinado">
+                <a href="https://rds.otimusclinic.com/radson/servlet/app.resultadodeexame?sdTjZIxAkYVpFL5AwTTQ8aUtVYs+hKhFyP16JMhyWus="
+                    target="_blank" class="download-btn-combinado">
                     <div class="icon-section">
                         <img src="imagens/exame.png" alt="Contato" style="filter: grayscale(100%) brightness(1000%)">
                     </div>
@@ -52,7 +57,8 @@
                     </div>
                 </a>
 
-                <a href="https://rds.otimusclinic.com/radson/servlet/app.entrar" target="_blank" class="download-btn-combinado">
+                <a href="https://rds.otimusclinic.com/radson/servlet/app.entrar" target="_blank"
+                    class="download-btn-combinado">
                     <div class="icon-section">
                         <img src="imagens/médico.png" alt="Equipe" style="filter: invert(100%)">
                     </div>
@@ -74,12 +80,24 @@
         <a href="blog.html">BLOG</a>
         <a href="contato.html">CONTATO</a>
     </div>
+    <div class="convenios">
+        <h1>Convênios</h1>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Pesquisar convênios...">
+        </div>
 
-    <script>
-        function toggleMenu() {
-            document.getElementById("menuCelular").classList.toggle("ativo");
-        }
-    </script>
+
+        <div id="list"></div>
+    </div>
+</body>
+
+
+<script>
+    function toggleMenu() {
+        document.getElementById("menuCelular").classList.toggle("ativo");
+    }
+</script>
+<script src="js/convenios.js"></script>
 </body>
 
 </html>

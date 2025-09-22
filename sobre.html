@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre | Radson - Diagnóstico por Imagem - Santa Cruz do Sul, RS</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.radson.com.br/assets/static/favicons/favicon-16x16.png">
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="https://www.radson.com.br/assets/static/svg/logo.svg" alt="Botão"
+                onclick="location.href='home.html'" class="logo">
+        </div>
+
+        <div class="nav-menu">
+            <div class="links">
+                <a href="sobre.html">SOBRE</a>
+                <a href="exames.html">EXAMES</a>
+                <a href="equipe.html">EQUIPE MÉDICA</a>
+                <a href="convenios.html">CONVÊNIOS</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contato.html">CONTATO</a>
+            </div>
+            <div class="grid-container">
+                <a href="https://agenda.otimusclinic.com/rds/client/agendamento" target="_blank" class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/calendario.png" alt="Calendário" >
+                    </div>
+                    <div class="text-section">
+                        Agendamento online
+                    </div>
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=5551996492360&text&type=phone_number&app_absent=0" target="_blank" class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/whatsapp-logo-png.png" alt="Resultados">
+                    </div>
+                    <div class="text-section">
+                        Agendamento via Whatsapp
+                    </div>
+                </a>
+
+                <a href="https://rds.otimusclinic.com/radson/servlet/app.resultadodeexame?sdTjZIxAkYVpFL5AwTTQ8aUtVYs+hKhFyP16JMhyWus=" target="_blank" class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/exame.png" alt="Contato" style="filter: grayscale(100%) brightness(1000%)">
+                    </div>
+                    <div class="text-section">
+                        Resultado de exames
+                    </div>
+                </a>
+
+                <a href="https://rds.otimusclinic.com/radson/servlet/app.entrar" target="_blank" class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/médico.png" alt="Equipe" style="filter: invert(100%)">
+                    </div>
+                    <div class="text-section">
+                        Acesso médico
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="hamburguer" onclick="toggleMenu()">☰</div>
+    </nav>
+    <!-- Nav-bar Celular-->
+    <div class="menu-celular" id="menuCelular">
+        <a href="sobre.html">SOBRE</a>
+        <a href="exames.html">EXAMES</a>
+        <a href="equipe.html">EQUIPE MÉDICA</a>
+        <a href="convenios.html">CONVÊNIOS</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contato.html">CONTATO</a>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menuCelular").classList.toggle("ativo");
+        }
+    </script>
+</body>
+
+</html>

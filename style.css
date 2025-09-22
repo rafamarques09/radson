@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', -apple-system, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /* NAVBAR padrão (PC) */
@@ -23,9 +23,9 @@ nav {
 /* Contêiner do menu */
 .nav-menu {
     display: flex; /* Mantém links e botões na mesma linha */
-    align-items: center; /* Alinha os links e os botões verticalmente */
+    align-items:flex-end; /* Alinha os links e os botões verticalmente */
     gap: 180px; /* Adiciona espaço entre links e botões */
-    margin-top: 20px; /* Adiciona um espaço para separar do logo */
+    margin-top: -90px; /* Adiciona um espaço para separar do logo */
 }
 
 .links {
@@ -46,10 +46,10 @@ nav {
 .logo {
   display:flex;
   position: relative;
-  height: 80px; 
+  height: 90px; 
   margin-bottom: 10px;
   margin-right: 900px;
-  margin-top: 20px;
+  margin-top: 10px;
   cursor: pointer;
 }
 .nav-btn .acessome, .resultadoex {
@@ -67,7 +67,7 @@ nav {
 .links a {
   position: relative;
   white-space: nowrap;
-  color: rgb(138, 138, 138);
+  color: rgb(102, 102, 102);
   text-decoration: none;
   font-weight: bold;
   padding-bottom: 4px;
@@ -143,3 +143,49 @@ nav {
         display: block; /* Mostra o ícone */
       }
     }
+/* Estilo para o contêiner da grade */
+.grid-container {
+    display: grid;
+    /* 2 colunas de tamanho igual */
+    grid-template-columns: repeat(2, 1fr); 
+    /* Espaço entre os botões */
+    gap: 20px; 
+    /* Opcional: Centraliza a grade na página */
+    justify-content: center;
+    align-content: center;
+}
+
+/* Estilo para cada botão da grade (código que já tínhamos) */
+.download-btn-combinado {
+    display: flex;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #D5303A;
+}
+
+.icon-section {
+    background-color: #ac262f; 
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-section img {
+    width: 24px;
+    height: 24px;
+}
+
+.text-section {
+    background-color: #D5303A;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

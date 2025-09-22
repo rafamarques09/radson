@@ -5,47 +5,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/home.css">
     <title>Início | Radson - Diagnóstico por Imagem - Santa Cruz do Sul, RS</title>
-</head>
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.radson.com.br/assets/static/favicons/favicon-16x16.png">
 
 <body>
     <nav>
-    <div class="nav-logo">
-        <img src="https://www.radson.com.br/assets/static/svg/logo.svg" alt="Botão" onclick="location.href='home.html'" class="logo">
-    </div>
-    
-    <div class="nav-menu">
-        <div class="links">
-            <a href="#">SOBRE</a>
-            <a href="#">EXAMES</a>
-            <a href="#">EQUIPE MÉDICA</a>
-            <a href="#">CONVÊNIOS</a>
-            <a href="#">BLOG</a>
-            <a href="#">CONTATO</a>
+        <div class="nav-logo">
+            <img src="https://www.radson.com.br/assets/static/svg/logo.svg" alt="Botão"
+                onclick="location.href='home.html'" class="logo">
         </div>
-        <div class="nav-btn">
-            <a class="resultadoex" href="https://rds.otimusclinic.com/radson/servlet/app.resultadodeexame?sdTjZIxAkYVpFL5AwTTQ8aUtVYs+hKhFyP16JMhyWus=" target="_blank">Resultado de exames</a>
-            <a class="acessome" href="https://rds.otimusclinic.com/radson/servlet/app.entrar" target="_blank">Acesso médico</a>
+
+        <div class="nav-menu">
+            <div class="links">
+                <a href="sobre.html">SOBRE</a>
+                <a href="exames.html">EXAMES</a>
+                <a href="equipe.html">EQUIPE MÉDICA</a>
+                <a href="convenios.html">CONVÊNIOS</a>
+                <a href="blog.html">BLOG</a>
+                <a href="contato.html">CONTATO</a>
+            </div>
+            <div class="grid-container">
+                <a href="https://agenda.otimusclinic.com/rds/client/agendamento" target="_blank"
+                    class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/calendario.png" alt="Calendário">
+                    </div>
+                    <div class="text-section">
+                        Agendamento online
+                    </div>
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=5551996492360&text&type=phone_number&app_absent=0"
+                    target="_blank" class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/whatsapp-logo-png.png" alt="Resultados">
+                    </div>
+                    <div class="text-section">
+                        Agendamento via Whatsapp
+                    </div>
+                </a>
+
+                <a href="https://rds.otimusclinic.com/radson/servlet/app.resultadodeexame?sdTjZIxAkYVpFL5AwTTQ8aUtVYs+hKhFyP16JMhyWus="
+                    target="_blank" class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/exame.png" alt="Contato" style="filter: grayscale(100%) brightness(1000%)">
+                    </div>
+                    <div class="text-section">
+                        Resultado de exames
+                    </div>
+                </a>
+
+                <a href="https://rds.otimusclinic.com/radson/servlet/app.entrar" target="_blank"
+                    class="download-btn-combinado">
+                    <div class="icon-section">
+                        <img src="imagens/médico.png" alt="Equipe" style="filter: invert(100%)">
+                    </div>
+                    <div class="text-section">
+                        Acesso médico
+                    </div>
+                </a>
+            </div>
         </div>
-    </div>
-    
-    <div class="hamburguer" onclick="toggleMenu()">☰</div>
-</nav>
+
+        <div class="hamburguer" onclick="toggleMenu()">☰</div>
+    </nav>
     <!-- Nav-bar Celular-->
     <div class="menu-celular" id="menuCelular">
-        <a href="#">SOBRE</a>
-        <a href="#">EXAMES</a>
-        <a href="#">EQUIPE MÉDICA</a>
-        <a href="#">CONVÊNIOS</a>
-        <a href="#">BLOG</a>
-        <a href="#">CONTATO</a>
+        <a href="sobre.html">SOBRE</a>
+        <a href="exames.html">EXAMES</a>
+        <a href="equipe.html">EQUIPE MÉDICA</a>
+        <a href="convenios.html">CONVÊNIOS</a>
+        <a href="blog.html">BLOG</a>
+        <a href="contato.html">CONTATO</a>
     </div>
+    <main>
 
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img
+                        src="https://www.radson.com.br/content/header/xRadson-Centro.jpg.pagespeed.ic.kNPcpx_3SG.webp"
+                        alt="1"></div>
+                <div class="slide"><img
+                        src="https://www.radson.com.br/content/header/xRadson-Ana-Nery.jpg.pagespeed.ic.bzTYO8XS5k.webp"
+                        alt="2"></div>
+                <div class="slide"><img
+                        src="https://www.radson.com.br/content/header/xEBF_0399-site.jpg.pagespeed.ic.vbP1quYV2N.webp"
+                        alt="3"></div>
+                <div class="slide"><img
+                        src="https://www.radson.com.br/content/header/xRadson-Estacao.jpg.pagespeed.ic.3ZWgx3NoQK.webp"
+                        alt="4"></div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+        <section class="exames">
+            <h1>Exames de Imagem</h1>
+            <div class="grid-container2">
+                <!-- Primeira linha (4 imagens) -->
+                <div class="grid-item">
+                    <img src="https://www.radson.com.br/content/produto/xRadiologia-Digital.jpg.pagespeed.ic.G-STbIIdxQ.webp"
+                        alt="Imagem 1" onclick="location.href='exames.html'">
+                    <p>Radiologia Digital</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.radson.com.br/content/produto/xMamografia-Digital.jpg.pagespeed.ic.sc0PnzRocQ.webp"
+                        alt="Imagem 2" onclick="location.href='exames.html'">
+                    <p>Mamografia Digital</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.radson.com.br/content/produto/xDensitometria-_ssea.jpg.pagespeed.ic.cpeIyBn2fi.webp"
+                        alt="Imagem 3" onclick="location.href='exames.html'">
+                    <p>Densitrometria Óssea</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://www.radson.com.br/content/produto/xEcografia.jpg.pagespeed.ic.Q0IBz7MH9N.webp"
+                        alt="Imagem 4" onclick="location.href='exames.html'">
+                    <p>Ecografia com Doppler 3D/4D</p>
+                </div>
+
+                <!-- Segunda linha (3 imagens centralizadas) -->
+                <div class="row-2">
+                    <div class="grid-item">
+                        <img src="https://www.radson.com.br/content/produto/xPuncoes-e-biopsias.jpg.pagespeed.ic.lZx0mNvxER.webp"
+                            alt="Imagem 5" onclick="location.href='exames.html'">
+                        <p>Biópsias, Punções e Drenagens</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://www.radson.com.br/content/produto/xTomografia-computadorizada.jpg.pagespeed.ic.d7KRNdXuqA.webp"
+                            alt="Imagem 6" onclick="location.href='exames.html'">
+                        <p>Tomografia Computadorizada</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://www.radson.com.br/content/produto/xRessonancia-Magnetica.jpg.pagespeed.ic.ifFZ66NWtq.webp"
+                            alt="Imagem 7" onclick="location.href='exames.html'">
+                        <p>Ressonância Magnética</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <script>
         function toggleMenu() {
             document.getElementById("menuCelular").classList.toggle("ativo");
         }
     </script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
