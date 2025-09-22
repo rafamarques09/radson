@@ -37,12 +37,6 @@ nav {
     
 }
 
-.nav-btn {
-    display: flex;
-    align-items: center; /* Garante que os botões fiquem alinhados */
-    gap: 15px;
-}
-
 .logo {
   display:flex;
   position: relative;
@@ -52,17 +46,7 @@ nav {
   margin-top: 10px;
   cursor: pointer;
 }
-.nav-btn .acessome, .resultadoex {
-  background-color: #D5303A;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  border-radius: 10px;
-}
 
-.nav-btn .acessome:hover, .resultadoex:hover {
-  background-color: #a02729;
-}
 
 .links a {
   position: relative;
