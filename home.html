@@ -101,44 +101,50 @@
             <button class="next">&#10095;</button>
         </div>
         <section class="exames">
-            <h1>Exames de Imagem</h1>
-            <div class="grid-container2">
+            <h1 id="titulo">Exames de Imagem</h1>
+            <div class="grid-container2" id="conteudo">
                 <!-- Primeira linha (4 imagens) -->
                 <div class="grid-item">
-                    <img src="https://www.radson.com.br/content/produto/xRadiologia-Digital.jpg.pagespeed.ic.G-STbIIdxQ.webp"
+                    <img id="imagem"
+                        src="https://www.radson.com.br/content/produto/xRadiologia-Digital.jpg.pagespeed.ic.G-STbIIdxQ.webp"
                         alt="Imagem 1" onclick="location.href='exames.html'">
                     <p>Radiologia Digital</p>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.radson.com.br/content/produto/xMamografia-Digital.jpg.pagespeed.ic.sc0PnzRocQ.webp"
+                    <img id="imagem"
+                        src="https://www.radson.com.br/content/produto/xMamografia-Digital.jpg.pagespeed.ic.sc0PnzRocQ.webp"
                         alt="Imagem 2" onclick="location.href='exames.html'">
                     <p>Mamografia Digital</p>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.radson.com.br/content/produto/xDensitometria-_ssea.jpg.pagespeed.ic.cpeIyBn2fi.webp"
+                    <img id="imagem"
+                        src="https://www.radson.com.br/content/produto/xDensitometria-_ssea.jpg.pagespeed.ic.cpeIyBn2fi.webp"
                         alt="Imagem 3" onclick="location.href='exames.html'">
                     <p>Densitrometria Óssea</p>
                 </div>
                 <div class="grid-item">
-                    <img src="https://www.radson.com.br/content/produto/xEcografia.jpg.pagespeed.ic.Q0IBz7MH9N.webp"
+                    <img id="imagem"
+                        src="https://www.radson.com.br/content/produto/xEcografia.jpg.pagespeed.ic.Q0IBz7MH9N.webp"
                         alt="Imagem 4" onclick="location.href='exames.html'">
                     <p>Ecografia com Doppler 3D/4D</p>
                 </div>
 
                 <!-- Segunda linha (3 imagens centralizadas) -->
                 <div class="row-2">
-                    <div class="grid-item">
+                    <div id="imagem" class="grid-item">
                         <img src="https://www.radson.com.br/content/produto/xPuncoes-e-biopsias.jpg.pagespeed.ic.lZx0mNvxER.webp"
                             alt="Imagem 5" onclick="location.href='exames.html'">
                         <p>Biópsias, Punções e Drenagens</p>
                     </div>
                     <div class="grid-item">
-                        <img src="https://www.radson.com.br/content/produto/xTomografia-computadorizada.jpg.pagespeed.ic.d7KRNdXuqA.webp"
+                        <img id="imagem"
+                            src="https://www.radson.com.br/content/produto/xTomografia-computadorizada.jpg.pagespeed.ic.d7KRNdXuqA.webp"
                             alt="Imagem 6" onclick="location.href='exames.html'">
                         <p>Tomografia Computadorizada</p>
                     </div>
                     <div class="grid-item">
-                        <img src="https://www.radson.com.br/content/produto/xRessonancia-Magnetica.jpg.pagespeed.ic.ifFZ66NWtq.webp"
+                        <img id="imagem"
+                            src="https://www.radson.com.br/content/produto/xRessonancia-Magnetica.jpg.pagespeed.ic.ifFZ66NWtq.webp"
                             alt="Imagem 7" onclick="location.href='exames.html'">
                         <p>Ressonância Magnética</p>
                     </div>
@@ -150,6 +156,17 @@
         function toggleMenu() {
             document.getElementById("menuCelular").classList.toggle("ativo");
         }
+        fetch('http://localhost/radson/wp-json/wp/v2/pages/2')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('titulo').innerText = data.title.rendered;
+                document.getElementById('conteudo').innerHTML = data.content.rendered;
+            });
+        fetch('http://localhost/radson/wp-json/wp/v2/media/10') // 10 = ID da imagem
+            .then(res => res.json())
+            .then(img => {
+                document.getElementById('imagem').src = img.source_url;
+            });
     </script>
     <script src="js/home.js"></script>
 </body>
